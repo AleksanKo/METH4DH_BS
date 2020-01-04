@@ -1,5 +1,7 @@
 # A final project for the course "Introduction to Methods in Digital Humanities"
 
+[![DOI](https://zenodo.org/badge/220471862.svg)](https://zenodo.org/badge/latestdoi/220471862)
+
 In my exploratory research I decided to investigate how Topic Modelling approach can be applied to the even extraction task.
 
 _Analysis_
