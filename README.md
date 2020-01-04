@@ -8,7 +8,7 @@ The topics and the words identifying them were analyzed and the conclusions abou
 
 _Data_
 
-For my research I have gathered data from BiographySampo portal via SPARQL-query. The data contains 49 biographies that were picked randomly from BiographySampo subset regarding Finnish university registries (Yliopistomatrikkelit), so the biographies of people who studied at the University of Helsinki were gathered. There are three corpora created from this data:
+For my research I have gathered data from BiographySampo portal via SPARQL-query. The data contains 49 biographies that were picked randomly from BiographySampo subset regarding Finnish university registries (_Yliopistomatrikkelit_), so the biographies of people who studied at the University of Helsinki were gathered. There are three corpora created from this data:
 
 - the training corpus which consists of only such paragraphs that definitely have an event in them (356 sentences, _training_non-l.csv_),
 
@@ -40,6 +40,7 @@ _Results_
 Overall it seems that topics don't correspond to events. However, in some topics in training corpora events were clearly present:
 1) In Topic 5 (a non-lemmatized corpus) there are 'toimi edustajana' (_worked as a representative_) and 'tuli dosentiksi' (_became a docent_). It's also hard to say whether these events are somehow interconnected, because these events may relate to different persons.
 2) In Topic 1 (a lemmatized corpus) there are 'väitellä' + 'tohtori' (_get a PhD_) and 'saada' + 'nimitys' (_get an appointment_)
+
 However, topics from the whole corpus don't seem to match any event.
 
 Problems arised:
