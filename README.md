@@ -1,18 +1,14 @@
 # A final project for the course "Introduction to Methods in Digital Humanities"
 
-This is my projet
-
 _Data_
 
 For my research I have gathered data from BiographySampo portal via SPARQL-query. The data contains 49 biographies that were picked randomly from BiographySampo subset regarding Finnish university registries (Yliopistomatrikkelit), so the biographies of people who studied at the University of Helsinki were gathered. There are three corpora created from this data:
 
--          the training corpus which consists of only such paragraphs that definitely have an event in them,
+- the training corpus which consists of only such paragraphs that definitely have an event in them,
 
--          the training corpus which was lemmatized,
+- the training corpus which was lemmatized (_new_corpus.csv_),
 
--          the whole corpus (all paragraphs, not lemmatized).
-
-Data is stored in the files _koko_korpus.csv_ and _new_corpus.csv_
+- the whole corpus (all paragraphs, not lemmatized - _koko_korpus.csv_).
 
 _Processing the data_
 
