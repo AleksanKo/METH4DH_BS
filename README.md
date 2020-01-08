@@ -45,5 +45,10 @@ Overall it seems that topics don't correspond to events. However, in some topics
 
 However, topics from the whole corpus don't seem to match any event.
 
+Possible reasons why the approach didn't work:
+1. The size of corpora - all of them are quite small;
+2. The abundance of proper nouns and words which are actually parts of larger phrases (_loppu_ - end, _vuosi_ - year);
+3. Certain events may have been over- or underpresented in the corpora. 
+
 Problems arised:
-1. Despite removing all punctuation, there were still NA cells in topics.
+- Despite removing all punctuation, there were still NA cells in topics. This was caused by some problem with encoding, and now it is solved.
