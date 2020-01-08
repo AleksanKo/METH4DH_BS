@@ -3,8 +3,7 @@ library(tm)
 library(topicmodels)
 #1st corpus - a training non-lemmatized corpus which is a subset of the whole corpus. A training corpus has events by definition
 corpus_test <-
-  'training_non-l.csv' %>%
-  readLines(encoding='utf-8')
+  readLines(iconv('training_non-l.csv'),encoding='UTF-8')
 corpus_test_proc <- Corpus(VectorSource(corpus_test))
 
 #R stopwords in tm package are basically a subset of NLTK stopwords and not enough
@@ -28,14 +27,12 @@ model_test <- LDA(doc_term_matrix_test,20)
 
 #Some problems with encoding arised
 terms(model_test,20) %>%
-  iconv(from='',to='latin1') %>%
   write.csv(file='terms_test.csv',fileEncoding = 'utf-8')
-View(iconv(terms(model_test,20), from='',to='latin1'))
+View(terms(model_test,20))
 
 #2nd corpus - a training lemmatized corpus which is a subset of the whole corpus. A training corpus has events by definition
 corpus_test_l <-
-  'training-l.csv' %>%
-  readLines(encoding='utf-8')
+  readLines(iconv('training-l.csv'),encoding='UTF-8')
 corpus_test_proc_l <- Corpus(VectorSource(corpus_test_l))
 
 #R stopwords in tm package are basically a subset of NLTK stopwords and not enough
@@ -59,9 +56,8 @@ model_test_l <- LDA(doc_term_matrix_test_l,20)
 
 #Some problems with encoding arised
 terms(model_test_l,20) %>%
-  iconv(from='',to='latin1') %>%
   write.csv(file='terms_test_l.csv',fileEncoding = 'utf-8')
-View(iconv(terms(model_test_l,20), from='',to='latin1'))
+View(terms(model_test_l,20))
 
 #original separator was ',', but it led to problems in reading
 #3rd corpus - the whole corpus
