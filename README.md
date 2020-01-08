@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/220471862.svg)](https://zenodo.org/badge/latestdoi/220471862)
 
-In my exploratory research I decided to investigate how Topic Modelling approach can be applied to the event categorization task. My idea was that some topics can be identified with the help of the keywords - namely verbs and nouns that together form a group (_toimia_ (to work) and noun that corresponds to some job, e.g. _lääkäri_ (doctor))
+In my exploratory research I decided to investigate how Topic Modelling approach can be applied to the event categorization task. My idea was that some topics can be identified with the help of the keywords - namely verbs and nouns that together form a group (_toimia_ (to work) and noun in the essive case that corresponds to some job, e.g. _lääkäri_ (doctor). The group will be: _toimia lääkärinä_.)
 
 _Analysis_
 
